@@ -15,5 +15,5 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;-------------------------------------------------------
 
 ; Load the Hyper Key
-#Include %A_ScriptDir%\scripts\hyper.ahk
+#Include %A_ScriptDir%\scripts\hyperkey.ahk
 
