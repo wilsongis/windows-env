@@ -15,7 +15,7 @@ WinActivate, Outlook
 Return
 
 
-~Capslock & z:: ; Archive Email
+~Capslock & z:: ; Archive Email - I used the quick actions to set up ctrl+shift+9
     Outlook := ComObjActive("Outlook.Application")	
     Selection := Outlook.ActiveExplorer.Selection
 	Send ^+9
