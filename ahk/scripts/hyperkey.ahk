@@ -55,7 +55,5 @@ return
         Run, wt.exe
 Return
 
-; Open Downloads folder
-~Capslock & d::Run "C:\Users\wilsonm\Downloads" ; ctrl+shift+d
-return
+
 
