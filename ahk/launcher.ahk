@@ -17,3 +17,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Load the Hyper Key
 #Include %A_ScriptDir%\scripts\hyperkey.ahk
 
+; Load the Outlook Keys
+#Include %A_ScriptDir%\scripts\outlook.ahk
+
