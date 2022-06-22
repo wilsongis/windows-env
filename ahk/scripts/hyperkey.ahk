@@ -32,15 +32,13 @@ return
 ~Capslock & k:: Send {Blind}{Up}
 ~Capslock & j:: Send {Blind}{Down}
 
-;; Hyper+c/v to copy/paste
-~Capslock & c:: Send ^{c}
-;;~Capslock & v:: Send ^{v} ;map to ditto instead
-
 ;; Hyper+a to set window to always on top
 ~Capslock & a:: Winset, Alwaysontop, , A
 
 ;; My Edits
-~Capslock & e::Run Code
+~Capslock & e::
+    Run Code
+Return
 ~Capslock & t::
     terminal := WinExist("ahk_exe WindowsTerminal.exe")
     if (terminal) 
