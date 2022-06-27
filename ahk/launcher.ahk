@@ -20,6 +20,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 DetectHiddenWindows, On
 ;}
 
+;; deactivate capslock completely
+SetCapslockState, AlwaysOff
+
 ; INITIALIZATION - VARIABLES
 ;{-----------------------------------------------
 ;
