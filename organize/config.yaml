@@ -1,0 +1,10 @@
+# organize configuration file
+# https://organize.readthedocs.io
+
+rules:
+  - locations:
+      - # your locations here
+    filters:
+      - # your filters here
+    actions:
+      - # your actions here

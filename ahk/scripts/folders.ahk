@@ -10,9 +10,13 @@ SendMode Input
 
 
 ; Open Downloads folder
-~Capslock & d::Run "C:\Users\wilsonm\Downloads" 
+~Capslock & d::
+    SetCapsLockState, AlwaysOff
+    Run "C:\Users\wilsonm\Downloads" 
 return
 
 ; Open code folder
-~Capslock & c::Run "D:\code"
+~Capslock & c::
+    SetCapsLockState, AlwaysOff
+    Run "D:\code"
 return

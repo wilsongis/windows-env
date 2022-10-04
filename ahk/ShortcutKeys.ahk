@@ -1,4 +1,4 @@
-;; based on @babygau's answer here https://stackoverflow.com/a/40559502
+﻿;; based on @babygau's answer here https://stackoverflow.com/a/40559502
 #NoEnv ; recommended for performance and compatibility with future autohotkey releases.
 #UseHook
 #InstallKeybdHook
@@ -26,14 +26,8 @@ SetCapslockState, AlwaysOff
     }
 return
 
-;; vim navigation with hyper and additional modifiers
-~Capslock & h:: Send {Blind}{Left}
-~Capslock & l:: Send {Blind}{Right}
-~Capslock & k:: Send {Blind}{Up}
-~Capslock & j:: Send {Blind}{Down}
 
-
-;; My Edits
+;; Programs
 ~Capslock & e::
     Run Code
 Return
@@ -51,5 +45,22 @@ Return
         Run, wt.exe
 Return
 
+;; Outlook
+; Archive Email - I used the quick actions to set up ctrl+shift+9
+~Capslock & z:: 
+    Outlook := ComObjActive("Outlook.Application")	
+    Selection := Outlook.ActiveExplorer.Selection
+	Send ^+9
+	Outlook := ""
+return
 
+;; Folders
+; Open Downloads folder
+~Capslock & d::
+    Run "C:\Users\wilsonm\Downloads" 
+return
 
+; Open code folder
+~Capslock & c::
+    Run "D:\code"
+return
