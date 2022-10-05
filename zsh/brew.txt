@@ -1,0 +1,3 @@
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/wilsonm/.profile
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/wilsonm/.profile
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
